@@ -15,7 +15,7 @@ shinyUI(pageWithSidebar(
       wellPanel(
         selectInput("MutRates", "Database type:", list("sym"   = "sym",
                                                       "nosym" = "nosym")),
-        selectInput("nCPU", "Number of CPU cores:", list("1 core"  = 1,
+        selectInput("nCPU", "Number of CPU (warp) cores:", list("1 core"  = 1,
                                                          "2 cores" = 2,
                                                          "4 cores" = 4,
                                                          "8 cores" = 8,
