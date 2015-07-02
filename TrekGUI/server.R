@@ -15,15 +15,13 @@ shinyServer(function(input, output){
         #output$status <- renderText({status})
         out <- Trek(FastaFile=input$FastaFile$datapath,
                     OutFile="out.txt", MutRates=input$MutRates,
-                    nCPU=as.numeric(input$nCPU), shiny=TRUE,
+                    nCPU=as.numeric(input$nCPU),
                     parsed.seq=input$sequence)
         output$downloadTrekOUT <<- downloadHandler(
           filename=function(){"out.txt"},
-          content=function(file){ write(out, file=file) }
+          content=function(file){ file.rename(from="out.txt", to=file) }
         )
-        output$out <<- renderTable({
-                   data.frame(out[c(1:7,length(out)-3)], stringsAsFactors=FALSE)
-                       })
+        output$out <<- renderTable({ data.frame(out, stringsAsFactors=FALSE) })
         status <<- "Trek is done! You can download the full output from the link below."
         #output$status <- renderText({status})
       } else {

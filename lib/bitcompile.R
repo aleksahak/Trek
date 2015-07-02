@@ -12,7 +12,7 @@ source(paste(LibPath,"/getBaseAfterMut.R",sep=""))
 source(paste(LibPath,"/getMutParIndex.R",sep=""))
 source(paste(LibPath,"/INFOline.R",sep=""))
 source(paste(LibPath,"/get1merLine.R",sep=""))
-source(paste(LibPath,"/getOUT.R",sep=""))
+source(paste(LibPath,"/getSTART.R",sep=""))
 source(paste(LibPath,"/getEND.R",sep=""))
 source(paste(LibPath,"/Trek.R",sep=""))
 Seq2Index        <- cmpfun(Seq2Index,       options=list(suppressUndefined=TRUE))
@@ -21,7 +21,7 @@ getBaseAfterMut  <- cmpfun(getBaseAfterMut, options=list(suppressUndefined=TRUE)
 getMutParIndex   <- cmpfun(getMutParIndex,  options=list(suppressUndefined=TRUE))
 INFOline         <- cmpfun(INFOline,        options=list(suppressUndefined=TRUE))
 get1merLine      <- cmpfun(get1merLine,     options=list(suppressUndefined=TRUE))
-getOUT           <- cmpfun(getOUT,          options=list(suppressUndefined=TRUE))
+getSTART         <- cmpfun(getSTART,        options=list(suppressUndefined=TRUE))
 getEND           <- cmpfun(getEND,          options=list(suppressUndefined=TRUE))
 Trek             <- cmpfun(Trek,            options=list(suppressUndefined=TRUE))
 mutrate.par.sym   <- readLines(paste(MutRatePath,"/MutRate_SYM.par",sep=""))
@@ -33,7 +33,7 @@ save(list=c("get1merLine",
             "INFOline",
             "readfasta",
             "Seq2Index",
-            "getOUT",
+            "getSTART",
             "getEND",
             "Trek",
             "mutrate.par.sym",
