@@ -1,12 +1,15 @@
 ---
-title: "Trek: a package to retrieve context-dependent core substitution rate constants (Homo sapiens) for DNA sequences and entire genomes"
-date: "08 December 2015"
+title: 'Trek: a program to retrieve context-dependent core substitution rate constants
+  (Homo sapiens) for DNA sequences and entire genomes'
 output:
   pdf_document: default
   html_document:
     highlight: tango
   word_document: default
+date: "08 December 2015"
 ---
+
+<img src="TrekGUI/Trek_logo.png" align="middle" height="180" width="180" margin="0 auto" />
 
 The \textsc{Trek} methodology is described in detail at <http://dx.doi.org/10.1101/024257>. The name of the package reflects on the fact that we obtained the **Tr**ansposon **E**xposed **k** rate constants (byr$^{-1}$), using the genomic *treks* of retrotransposon remnants in the human genome. 
 
