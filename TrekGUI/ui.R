@@ -14,14 +14,14 @@ shinyUI(pageWithSidebar(
       #--#########################################################
       wellPanel(
         selectInput("MutRates", "Database type:", list("sym"   = "sym",
-                                                      "nosym" = "nosym")),
+                                                       "nosym" = "nosym")),
         selectInput("nCPU", "Number of CPU (warp) cores:", list("1 core"  = 1,
-                                                         "2 cores" = 2,
-                                                         "4 cores" = 4,
-                                                         "8 cores" = 8,
-                                                         "12 cores" = 12,
-                                                         "16 cores" = 16,
-                                                         "24 cores" = 24))
+                                                                "2 cores" = 2,
+                                                                "4 cores" = 4,
+                                                                "8 cores" = 8,
+                                                               "12 cores" = 12,
+                                                               "16 cores" = 16,
+                                                               "24 cores" = 24))
       )
       #--#########################################################
   ),
@@ -33,7 +33,7 @@ shinyUI(pageWithSidebar(
       #--#########################################################
       conditionalPanel(
         condition = "output.text == 'Idle'",
-        h5("A program to calculate the sequence-context dependent core neutral mutation rate constants (homo sapiens) for any DNA sequence, based on the TRansposon Exposed k values. The server version is only suitable for small sequences and cannot utilise more than one CPU core. To use the full power of the program, please download the stand-alone version, with or without this graphical user interface, and use as many computing processors as possible. The full instructions along with the source data are available from ", a("HERE", href="http://www.atgcdynamics.org/Trek"),".")
+        h5("A program to calculate the sequence-context dependent core neutral substitution rate constants (Homo sapiens) for any DNA sequence, based on the TRansposon Exposed k values. The server version is only suitable for small sequences and cannot utilise more than one CPU core. To use the full power of the program, please download the stand-alone version, usable with or without (terminal access) this graphical user interface, and utilize as many computing processors as possible. The full instruction sets along with the source data are available from ", a("HERE", href="http://trek.atgcdynamics.org/"),".")
       ),
       #--#########################################################
 

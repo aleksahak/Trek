@@ -23,7 +23,7 @@ Trek <- function(FastaFile    = "test.fasta",
   if(MutRates=="nosym"){ mutrate.par <- mutrate.par.nosym}
 
   info <- INFOline(OUT=info, msg=
-  "NOTE: *:)* TRansposon Exposed k, core mutation rate constant, mapper. *(:*",
+  "NOTE: *:)* TRansposon Exposed k, core substitution rate constant, mapper. *(:*",
   initial=TRUE)
 
   info <- INFOline(OUT=info, msg=
