@@ -8,7 +8,7 @@ word_document: default
 
 # Trek: a program to retrieve context-dependent core substitution rate constants (Homo sapiens) for DNA sequences and entire genomes
 
-<img src="TrekGUI/Trek_logo.png" align="middle" height="180" width="120" margin="0 auto" />
+<img src="TrekGUI/Trek_logo.png" align="middle" height="180" width="150" margin="0 auto" />
 
 The \textsc{Trek} methodology is described in detail at <http://dx.doi.org/10.1101/024257>. The name of the package reflects on the fact that we obtained the **Tr**ansposon **E**xposed **k** rate constants (byr$^{-1}$), using the genomic *treks* of retrotransposon remnants in the human genome. 
 
