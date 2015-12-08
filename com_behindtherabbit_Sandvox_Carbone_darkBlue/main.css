@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-/* 
+/*
    css Copyright © 2005-2012 Karelia Software. All rights reserved.
-   css released under Creative Commons License  - http://creativecommons.org/licenses/by-sa/2.5/ 
-   All associated graphics belong to their respective owners and are licensed separately. 
+   css released under Creative Commons License  - http://creativecommons.org/licenses/by-sa/2.5/
+   All associated graphics belong to their respective owners and are licensed separately.
 */
 
 /* IE7 hacks */
@@ -35,9 +35,10 @@ div.text-navigation div { display:inline; margin:0px 0.5em; }
     clear:right!important;
 }
 
-.wide.left .graphic, img.wide.left { margin-left:0px; margin-right:auto; }
-.wide.center .graphic, img.wide.center { margin-left:auto; margin-right:auto; }
-.wide.right .graphic, img.wide.right { margin-left:auto; margin-right:0px; }
+.wide.left   .graphic, img.wide.left,   .wide.left video,   .wide.left audio   { display:block; margin-left:0px; margin-right:auto; }
+.wide.center .graphic, img.wide.center, .wide.center video, .wide.center audio { display:block; margin-left:auto; margin-right:auto; }
+.wide.right  .graphic, img.wide.right,  .wide.right video,  .wide.right audio  { display:block; margin-left:auto; margin-right:0px; }
+
 
 .ImageElement.left, .AudioElement.left { text-align:left; }
 .ImageElement.center, .AudioElement.center { text-align:center; }
@@ -64,7 +65,7 @@ div.text-navigation div { display:inline; margin:0px 0.5em; }
 {
 	margin-bottom:1em;
 }
- 
+
 /* Firefox reduce dotted lines on links */
 .photo-navigation a:focus, .replaced a:focus {overflow:hidden;}
 
