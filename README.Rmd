@@ -1,19 +1,18 @@
 ---
-title: 'Trek: a program to retrieve context-dependent core substitution rate constants
-  (Homo sapiens) for DNA sequences and entire genomes'
-output:
-  pdf_document: default
-  html_document:
-    highlight: tango
-  word_document: default
-date: "08 December 2015"
+html_document:
+  highlight: tango
+output: html_document
+pdf_document: default
+word_document: default
 ---
+
+# Trek: a program to retrieve context-dependent core substitution rate constants (Homo sapiens) for DNA sequences and entire genomes
 
 <img src="TrekGUI/Trek_logo.png" align="middle" height="180" width="180" margin="0 auto" />
 
 The \textsc{Trek} methodology is described in detail at <http://dx.doi.org/10.1101/024257>. The name of the package reflects on the fact that we obtained the **Tr**ansposon **E**xposed **k** rate constants (byr$^{-1}$), using the genomic *treks* of retrotransposon remnants in the human genome. 
 
-# Installation
+## Installation
 
 **1.** Install the latest version of R programming language or skip to the next step. Some step-wise instructions on R installation and upgrade can be found here: [1](http://alexonscience.blogspot.co.uk/2015/10/installing-r-on-linuxunix-machines-from.html), [2](http://alexonscience.blogspot.co.uk/2015/10/upgrade-r-environmentlibraries-mac-osx.html).
 
@@ -63,7 +62,7 @@ and, if the test sequence file is preserved,
 
 - **test.fasta** - the example DNA sequence fasta file.
 
-# Running Trek from R
+## Running Trek from R
 
 \textsc{Trek} can be executed as an R program, either from within R, or from the Linux/Unix/OSX command line through R CMD BATCH or Rscript execution. The latter two options allow the usage of \textsc{Trek} from the scripts written via programming languages other than R.
 
@@ -76,7 +75,7 @@ In R, as exemplified in the **Trek.R** interfacing script, one should load the *
 
 Alternatively, the **Trek.R** file can be edited to set the desired arguments, and executed from the command line via R CMD BATCH or Rscript.
 
-# Running Trek from a GUI
+## Running Trek from a GUI
 
 \textsc{Trek} features a browser-based graphical user interface (GUI), written with Shiny that can be executed locally on as many CPUs as desired. To launch the GUI, enter the **TrekGUI/** subfolder and double click on **TrekGUI** file. If the file fails to open a browser, make sure that the permissions are correctly set for the file (as executable):
 
@@ -95,7 +94,7 @@ then open the **TrekGUI** executable file via a usual plain text editor and corr
 
 Now double click on **TrekGUI**. As soon as the browser opens, the rest is self explanatory.
 
-# License
+## License
 
 You may redistribute the \textsc{Trek} source code (or its components) and/or modify/translate it under the terms of the GNU General Public License as published by the Free Software Foundation; version 2 of the License (GPL2). You can find the details of GPL2 in the following link: <http://www.gnu.org/licenses/gpl-2.0.html>.
 
