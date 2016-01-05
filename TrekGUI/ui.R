@@ -33,7 +33,7 @@ shinyUI(pageWithSidebar(
       #--#########################################################
       conditionalPanel(
         condition = "output.text == 'Idle'",
-        h5("A program to calculate the sequence-context dependent core neutral substitution rate constants (Homo sapiens) for any DNA sequence, based on the TRansposon Exposed k values. The server version is only suitable for small sequences and cannot utilise more than one CPU core. To use the full power of the program, please download the stand-alone version, usable with or without (terminal access) this graphical user interface, and utilize as many computing processors as possible. The full instruction sets along with the source data are available from ", a("HERE", href="http://trek.atgcdynamics.org/"),".")
+        h5("A program to calculate the sequence-context dependent core neutral substitution rate constants (Homo sapiens, germline) for any DNA sequence, based on the TRansposon Exposed k values. The on-line server version is only suitable for small sequences and cannot utilise more than one CPU core. To use the full power of the program, please download the stand-alone version, usable with or without (terminal access) this graphical user interface, and utilize as many computing processors as possible. The full instruction sets along with the source data are available from ", a("HERE", href="http://trek.atgcdynamics.org/"),".")
       ),
       #--#########################################################
 
