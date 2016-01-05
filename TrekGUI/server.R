@@ -34,7 +34,7 @@ shinyServer(function(input, output){
     output$logo <- renderImage({
      list(src = "Trek_logo.png",
           contentType = 'image/png',
-          width = 230, height = 160,
+          width = 230, height = 260,
           alt = "No logo is found...")
     }, deleteFile = FALSE)
     #***#######################
