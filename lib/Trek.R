@@ -1,7 +1,7 @@
 ################################################################################
 #//    Aleksandr B. Sahakyan (aleksahak [at] cantab.net), Cambridge 2015     \\#
 ## FUNCTION ####################################################################
-# If nCPU>1, requires the libraries "doMC", "foreach" and "itertools".         #
+# Requires the libraries "doMC", "foreach" and "itertools".                    #
 # If not already installed in R, you can install those by typing:              #
 # install.packages(c("doMC", "foreach" and "itertools"))                       #
 ################################################################################
