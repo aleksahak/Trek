@@ -4,8 +4,9 @@
 # install.packages(c("doMC", "foreach" and "itertools"))                       #
 ################################################################################
 load("Trek.lib")
-Trek(FastaFile= "test.fasta", 
-     OutFile  = "out.txt",
-     MutRates = "sym", # "nosym"
-     nCPU     = 1)
+Trek(FastaFile  = "test.fasta", 
+     OutFile    = "out.txt",
+     MutRates   = "sym", # "nosym"
+     nCPU       = 1,
+     parsed.seq = "")
 ################################################################################
